@@ -1,0 +1,20 @@
+[32m2023-04-06 10:17:49[0m logging.py [1m| INFO | 🔍 Find element: id=username. 用户名[0m
+[32m2023-04-06 10:17:50[0m logging.py [1m| INFO | ✅ send_keys('admin').[0m
+[32m2023-04-06 10:17:50[0m logging.py [1m| INFO | 🔍 Find element: id=password. 密码[0m
+[32m2023-04-06 10:17:51[0m logging.py [1m| INFO | ✅ send_keys('123456').[0m
+[32m2023-04-06 10:17:51[0m logging.py [1m| INFO | 🔍 Find element: id=login_submit. 登录[0m
+[32m2023-04-06 10:18:04[0m logging.py [1m| INFO | ✅ click().[0m
+[32m2023-04-06 10:18:04[0m logging.py [1m| INFO | 🔍 Find element: xpath=//*[@id="app_menu"]/div[2]/div[1]/div/ul/div[3]/li/div/span. 销售管理[0m
+[32m2023-04-06 10:18:05[0m logging.py [1m| INFO | ✅ click().[0m
+[32m2023-04-06 10:18:05[0m logging.py [1m| INFO | 🔍 Find element: xpath=//*[@id="app_menu"]/div[2]/div[1]/div/ul/div[3]/li/ul/li[1]/span. 海纳百川[0m
+[32m2023-04-06 10:18:06[0m logging.py [1m| INFO | ✅ click().[0m
+[32m2023-04-06 10:18:07[0m logging.py [1m| INFO | 🔍 Find element: id=tab-需求. 需求[0m
+[32m2023-04-06 10:18:08[0m logging.py [1m| INFO | ✅ click().[0m
+[32m2023-04-06 10:18:08[0m logging.py [1m| INFO | 🔍 Find element: id=tab-需求. 需求[0m
+[32m2023-04-06 10:18:09[0m logging.py [1m| INFO | ✅ text: 需求(191).[0m
+[32m2023-04-06 10:18:11[0m logging.py [1m| INFO | 🔍 Find element: xpath=//*[@id="haiNaBaiChuan"]/div[2]/div[2]/div[1]/div/div[2]/span[1]. 最下方的数量[0m
+[32m2023-04-06 10:18:12[0m logging.py [1m| INFO | ✅ text: 共 191 条.[0m
+[32m2023-04-06 10:18:13[0m logging.py [1m| INFO | 🔍 Find element: xpath=//*[@id="haiNaBaiChuan"]/div[2]/div[2]/div[1]/div/div[2]/ul/li[last()]. 页码号[0m
+[32m2023-04-06 10:18:14[0m logging.py [1m| INFO | ✅ click().[0m
+[32m2023-04-06 10:18:16[0m logging.py [1m| INFO | 🔍 Find element: xpath=//*[@id="haiNaBaiChuan"]/div[2]/div[2]/div[1]/div/div[1]/div[3]/table/tbody/tr[last()]/td[1]/div/span. 序号[0m
+[32m2023-04-06 10:18:17[0m logging.py [1m| INFO | ✅ text: 191.[0m

@@ -1,0 +1,15 @@
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "4a0ca74aa17d90f688edfd4cedda6be4",
+    "name" : "project_01.test_dir",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 19,
+      "unknown" : 0,
+      "total" : 19
+    }
+  } ]
+}

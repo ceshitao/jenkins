@@ -1,0 +1,12 @@
+pytest
+pytest-html
+pytest-xdist
+pytest-rerunfailures
+pytest-ordering
+pytest-dependency
+locust  
+selenium
+webdriver-manager
+poium
+allure-pytest
+yagmail

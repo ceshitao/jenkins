@@ -1,0 +1,120 @@
+{
+  "uid" : "bf798039b05cefe8",
+  "name" : "test_request_search[web_login0]",
+  "fullName" : "project_01.test_dir.test_sales_management.Test_search#test_request_search",
+  "historyId" : "bfbc736d2906b6f9b16a855cd6353fe5",
+  "time" : {
+    "start" : 1680747543869,
+    "stop" : 1680747554516,
+    "duration" : 10647
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1680747465165,
+      "stop" : 1680747467380,
+      "duration" : 2215
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "web_login",
+    "time" : {
+      "start" : 1680747537723,
+      "stop" : 1680747543869,
+      "duration" : 6146
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a2e9aeae997fd62c",
+      "name" : "stderr",
+      "source" : "a2e9aeae997fd62c.txt",
+      "type" : "text/plain",
+      "size" : 2606
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1680747615465,
+      "stop" : 1680747617643,
+      "duration" : 2178
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "project_01.test_dir"
+  }, {
+    "name" : "suite",
+    "value" : "test_sales_management"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_search"
+  }, {
+    "name" : "host",
+    "value" : "mt_rjb"
+  }, {
+    "name" : "thread",
+    "value" : "6396-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "project_01.test_dir.test_sales_management"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "web_login",
+    "value" : "['http://192.168.9.66:8074/HelloWater/', 'admin', '123456']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bf798039b05cefe8.json",
+  "parameterValues" : [ "['http://192.168.9.66:8074/HelloWater/', 'admin', '123456']" ]
+}

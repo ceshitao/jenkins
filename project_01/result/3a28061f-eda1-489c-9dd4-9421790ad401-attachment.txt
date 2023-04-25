@@ -1,0 +1,6 @@
+[32m2023-04-10 14:49:28[0m logging.py [1m| INFO | 🔍 Find element: id=username. 用户名[0m
+[32m2023-04-10 14:49:29[0m logging.py [1m| INFO | ✅ send_keys('admin').[0m
+[32m2023-04-10 14:49:29[0m logging.py [1m| INFO | 🔍 Find element: id=password. 密码[0m
+[32m2023-04-10 14:49:30[0m logging.py [1m| INFO | ✅ send_keys('123456').[0m
+[32m2023-04-10 14:49:30[0m logging.py [1m| INFO | 🔍 Find element: id=login_submit. 登录[0m
+[32m2023-04-10 14:49:32[0m logging.py [1m| INFO | ✅ click().[0m

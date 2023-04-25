@@ -1,0 +1,124 @@
+{
+  "uid" : "4525b92ee958b624",
+  "name" : "test_new_add[web_login0]",
+  "fullName" : "project_01.test_dir.test_sales_management.Test_new_add#test_new_add",
+  "historyId" : "0f992f554872ab5e98b4b2657cb04f2f",
+  "time" : {
+    "start" : 1680747465164,
+    "stop" : 1680747465164,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False",
+  "statusTrace" : "request = <SubRequest 'web_login' for <Function test_new_add[web_login0]>>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"8717896a4dd13ff3cb00e7fe7771a004\")>\n\n    @pytest.fixture(scope=\"function\", params=list_a)\n    def web_login(request,browser):\n        libiao = request.param\n        url = libiao[0]\n        username = libiao[1]\n        password = libiao[2]\n        driver = browser\n        driver.get(url)\n        '''元素定位'''\n        Page = login_page(driver)\n        Page.search_input_username = username\n        Page.search_input_password = password\n        Page.search_button_login.click()\n        try:\n            wait = WebDriverWait(driver,3, poll_frequency=0.5)\n>           wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id=\"app_menu\"]/div[2]/div[1]/div/ul/div[3]/li/div/span')))\n\nproject_01\\test_dir\\conftest.py:64: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"8717896a4dd13ff3cb00e7fe7771a004\")>\nmethod = <function presence_of_element_located.<locals>._predicate at 0x000002356920A050>\nmessage = ''\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message: \nE       Stacktrace:\nE       Backtrace:\nE       \t(No symbol) [0x00E4DCE3]\nE       \t(No symbol) [0x00DE39D1]\nE       \t(No symbol) [0x00CF4DA8]\nE       \t(No symbol) [0x00D2019F]\nE       \t(No symbol) [0x00D203AB]\nE       \t(No symbol) [0x00D4EE62]\nE       \t(No symbol) [0x00D3AF14]\nE       \t(No symbol) [0x00D4D57C]\nE       \t(No symbol) [0x00D3ACC6]\nE       \t(No symbol) [0x00D16F68]\nE       \t(No symbol) [0x00D180CD]\nE       \tGetHandleVerifier [0x010C3832+2506274]\nE       \tGetHandleVerifier [0x010F9794+2727300]\nE       \tGetHandleVerifier [0x010FE36C+2746716]\nE       \tGetHandleVerifier [0x00EF6690+617600]\nE       \t(No symbol) [0x00DEC712]\nE       \t(No symbol) [0x00DF1FF8]\nE       \t(No symbol) [0x00DF20DB]\nE       \t(No symbol) [0x00DFC63B]\nE       \tBaseThreadInitThunk [0x765A7D69+25]\nE       \tRtlInitializeExceptionChain [0x7797B74B+107]\nE       \tRtlClearBits [0x7797B6CF+191]\n\nvenv\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py:95: TimeoutException\n\nDuring handling of the above exception, another exception occurred:\n\nrequest = <SubRequest 'web_login' for <Function test_new_add[web_login0]>>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"8717896a4dd13ff3cb00e7fe7771a004\")>\n\n    @pytest.fixture(scope=\"function\", params=list_a)\n    def web_login(request,browser):\n        libiao = request.param\n        url = libiao[0]\n        username = libiao[1]\n        password = libiao[2]\n        driver = browser\n        driver.get(url)\n        '''元素定位'''\n        Page = login_page(driver)\n        Page.search_input_username = username\n        Page.search_input_password = password\n        Page.search_button_login.click()\n        try:\n            wait = WebDriverWait(driver,3, poll_frequency=0.5)\n            wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id=\"app_menu\"]/div[2]/div[1]/div/ul/div[3]/li/div/span')))\n        except Exception:\n>           assert False\nE           assert False\n\nproject_01\\test_dir\\conftest.py:66: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1680747465165,
+      "stop" : 1680747467380,
+      "duration" : 2215
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "web_login",
+    "time" : {
+      "start" : 1680747467380,
+      "stop" : 1680747485248,
+      "duration" : 17868
+    },
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False\n",
+    "statusTrace" : "  File \"D:\\project\\venv\\lib\\site-packages\\pluggy\\_callers.py\", line 39, in _multicall\n    res = hook_impl.function(*args)\n  File \"D:\\project\\venv\\lib\\site-packages\\_pytest\\fixtures.py\", line 1129, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n  File \"D:\\project\\venv\\lib\\site-packages\\_pytest\\fixtures.py\", line 908, in call_fixture_func\n    fixture_result = fixturefunc(**kwargs)\n  File \"D:\\project\\project_01\\test_dir\\conftest.py\", line 66, in web_login\n    assert False\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False",
+    "statusTrace" : "request = <SubRequest 'web_login' for <Function test_new_add[web_login0]>>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"8717896a4dd13ff3cb00e7fe7771a004\")>\n\n    @pytest.fixture(scope=\"function\", params=list_a)\n    def web_login(request,browser):\n        libiao = request.param\n        url = libiao[0]\n        username = libiao[1]\n        password = libiao[2]\n        driver = browser\n        driver.get(url)\n        '''元素定位'''\n        Page = login_page(driver)\n        Page.search_input_username = username\n        Page.search_input_password = password\n        Page.search_button_login.click()\n        try:\n            wait = WebDriverWait(driver,3, poll_frequency=0.5)\n>           wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id=\"app_menu\"]/div[2]/div[1]/div/ul/div[3]/li/div/span')))\n\nproject_01\\test_dir\\conftest.py:64: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"8717896a4dd13ff3cb00e7fe7771a004\")>\nmethod = <function presence_of_element_located.<locals>._predicate at 0x000002356920A050>\nmessage = ''\n\n    def until(self, method, message: str = \"\"):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message: \nE       Stacktrace:\nE       Backtrace:\nE       \t(No symbol) [0x00E4DCE3]\nE       \t(No symbol) [0x00DE39D1]\nE       \t(No symbol) [0x00CF4DA8]\nE       \t(No symbol) [0x00D2019F]\nE       \t(No symbol) [0x00D203AB]\nE       \t(No symbol) [0x00D4EE62]\nE       \t(No symbol) [0x00D3AF14]\nE       \t(No symbol) [0x00D4D57C]\nE       \t(No symbol) [0x00D3ACC6]\nE       \t(No symbol) [0x00D16F68]\nE       \t(No symbol) [0x00D180CD]\nE       \tGetHandleVerifier [0x010C3832+2506274]\nE       \tGetHandleVerifier [0x010F9794+2727300]\nE       \tGetHandleVerifier [0x010FE36C+2746716]\nE       \tGetHandleVerifier [0x00EF6690+617600]\nE       \t(No symbol) [0x00DEC712]\nE       \t(No symbol) [0x00DF1FF8]\nE       \t(No symbol) [0x00DF20DB]\nE       \t(No symbol) [0x00DFC63B]\nE       \tBaseThreadInitThunk [0x765A7D69+25]\nE       \tRtlInitializeExceptionChain [0x7797B74B+107]\nE       \tRtlClearBits [0x7797B6CF+191]\n\nvenv\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py:95: TimeoutException\n\nDuring handling of the above exception, another exception occurred:\n\nrequest = <SubRequest 'web_login' for <Function test_new_add[web_login0]>>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"8717896a4dd13ff3cb00e7fe7771a004\")>\n\n    @pytest.fixture(scope=\"function\", params=list_a)\n    def web_login(request,browser):\n        libiao = request.param\n        url = libiao[0]\n        username = libiao[1]\n        password = libiao[2]\n        driver = browser\n        driver.get(url)\n        '''元素定位'''\n        Page = login_page(driver)\n        Page.search_input_username = username\n        Page.search_input_password = password\n        Page.search_button_login.click()\n        try:\n            wait = WebDriverWait(driver,3, poll_frequency=0.5)\n            wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id=\"app_menu\"]/div[2]/div[1]/div/ul/div[3]/li/div/span')))\n        except Exception:\n>           assert False\nE           assert False\n\nproject_01\\test_dir\\conftest.py:66: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4096d348ce13e0b5",
+      "name" : "stderr",
+      "source" : "4096d348ce13e0b5.txt",
+      "type" : "text/plain",
+      "size" : 528
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1680747615465,
+      "stop" : 1680747617643,
+      "duration" : 2178
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "project_01.test_dir"
+  }, {
+    "name" : "suite",
+    "value" : "test_sales_management"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_new_add"
+  }, {
+    "name" : "host",
+    "value" : "mt_rjb"
+  }, {
+    "name" : "thread",
+    "value" : "6396-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "project_01.test_dir.test_sales_management"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "web_login",
+    "value" : "['http://192.168.9.66:8074/HelloWater/', 'admin', '123456']"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4525b92ee958b624.json",
+  "parameterValues" : [ "['http://192.168.9.66:8074/HelloWater/', 'admin', '123456']" ]
+}

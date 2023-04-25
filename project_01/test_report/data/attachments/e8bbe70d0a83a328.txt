@@ -1,0 +1,24 @@
+[32m2023-04-06 10:19:42[0m logging.py [1m| INFO | 🔍 Find element: id=username. 用户名[0m
+[32m2023-04-06 10:19:43[0m logging.py [1m| INFO | ✅ send_keys('admin').[0m
+[32m2023-04-06 10:19:43[0m logging.py [1m| INFO | 🔍 Find element: id=password. 密码[0m
+[32m2023-04-06 10:19:44[0m logging.py [1m| INFO | ✅ send_keys('123456').[0m
+[32m2023-04-06 10:19:44[0m logging.py [1m| INFO | 🔍 Find element: id=login_submit. 登录[0m
+[32m2023-04-06 10:19:49[0m logging.py [1m| INFO | ✅ click().[0m
+[32m2023-04-06 10:19:49[0m logging.py [1m| INFO | 🔍 Find element: xpath=//*[@id="app_menu"]/div[2]/div[1]/div/ul/div[3]/li/div/span. 销售管理[0m
+[32m2023-04-06 10:19:50[0m logging.py [1m| INFO | ✅ click().[0m
+[32m2023-04-06 10:19:50[0m logging.py [1m| INFO | 🔍 Find element: xpath=//*[@id="app_menu"]/div[2]/div[1]/div/ul/div[3]/li/ul/li[1]/span. 海纳百川[0m
+[32m2023-04-06 10:19:51[0m logging.py [1m| INFO | ✅ click().[0m
+[32m2023-04-06 10:19:51[0m logging.py [1m| INFO | 🔍 Find element: id=tab-全部. 全部[0m
+[32m2023-04-06 10:19:52[0m logging.py [1m| INFO | ✅ click().[0m
+[32m2023-04-06 10:19:53[0m logging.py [1m| INFO | 🔍 Find element: xpath=//*[@id="haiNaBaiChuan"]/div[2]/div[1]/form/div[1]/div/div/input. 业务编号[0m
+[32m2023-04-06 10:19:54[0m logging.py [1m| INFO | ✅ send_keys('').[0m
+[32m2023-04-06 10:19:54[0m logging.py [1m| INFO | 🔍 Find element: xpath=//*[@id="haiNaBaiChuan"]/div[2]/div[1]/form/div[2]/div/div/input. 请输入主题简介[0m
+[32m2023-04-06 10:19:55[0m logging.py [1m| INFO | ✅ send_keys('测试').[0m
+[32m2023-04-06 10:19:55[0m logging.py [1m| INFO | 🔍 Find element: xpath=//*[@id="haiNaBaiChuan"]/div[2]/div[1]/form/div[3]/div/div/input. 请输入上报人[0m
+[32m2023-04-06 10:19:56[0m logging.py [1m| INFO | ✅ send_keys('').[0m
+[32m2023-04-06 10:19:56[0m logging.py [1m| INFO | 🔍 Find element: xpath=//*[@id="haiNaBaiChuan"]/div[2]/div[1]/form/div[4]/div/div/input. 请输入负责跟踪人[0m
+[32m2023-04-06 10:19:57[0m logging.py [1m| INFO | ✅ send_keys('').[0m
+[32m2023-04-06 10:19:57[0m logging.py [1m| INFO | 🔍 Find element: xpath=//*[@id="haiNaBaiChuan"]/div[2]/div[1]/form/div[5]/div/div/input. 请输入来源信息[0m
+[32m2023-04-06 10:19:58[0m logging.py [1m| INFO | ✅ send_keys('').[0m
+[32m2023-04-06 10:19:58[0m logging.py [1m| INFO | 🔍 Find element: xpath=//*[@id="haiNaBaiChuan"]/div[2]/div[1]/form/div[6]/button[2]/span. 查询[0m
+[32m2023-04-06 10:19:59[0m logging.py [1m| INFO | ✅ click().[0m
