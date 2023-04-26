@@ -44,5 +44,5 @@ if __name__ == '__main__':
     #pytest.main(['-n 5', '--reruns=2 ', 'project_01/test_dir/test_sales_management.py', 'project_01/test_dir/test_login.py','--alluredir', "./project_01./result"])
     #os.system("allure generate ./project_01./result -o ./project_01./test_report --clean")
     file_zip()
-    # send_mail("2597115793@qq.com")
+    send_mail("2597115793@qq.com")
 
