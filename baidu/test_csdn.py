@@ -9,8 +9,13 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import re
 import allure
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 class Test():
     def test_01(self):
-        driver = webdriver.Chrome()
+        chrome_options = Options()
+        chrome_options.add_argument('--headless')
+        driver = webdriver.Chrome(chrome_options=chrome_options)
         driver.get('https://www.csdn.net/')
+        driver.close()
 
